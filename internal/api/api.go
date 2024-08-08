@@ -185,7 +185,7 @@ func (h apiHandler) handleCreateRoom(w http.ResponseWriter, r *http.Request) {
 	}
 
 	type response struct {
-		ID string `json:"id`
+		ID string `json:"id"`
 	}
 
 	data, _ := json.Marshal(response{ID: roomId.String()})
